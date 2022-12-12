@@ -18,15 +18,15 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-
     outline: 2px solid red;
-  // phone screen 0px & >
+
+    // phone screen 0px & >
 @media screen and (min-width: 480px) {
-  width: 448px;
+  width: 480px;
 }
   // tablets screen 768px & >
   @media screen and (min-width: 768px) {
-    width: 720px;
+    width: 768px;
   }
 
   // desktop screen 1200px & >
