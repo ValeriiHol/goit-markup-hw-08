@@ -4,25 +4,21 @@
     @extend %section;
     @media screen and (max-width: 1199px) {
       display: flex;
-      flex-direction: column;
-          align-items: center;
+      align-items: center;
     }
     &__title {
       margin-top: 0;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       color: $title-text-color;
       font-weight: 700;
-      @media screen and (min-width: 480px) {
-        margin-bottom: 30px;
-        font-size: 28px;
-        line-height: calc(33 / 28);
-      }
+      font-size: 28px;
+      line-height: calc(33 / 28);
+      text-align: center;
       @media screen and (min-width: 1200px) {
         margin-bottom: 50px;
         font-size: 36px;
         line-height: calc(42 / 36);
       }
-      text-align: center;
     }
   }
 
