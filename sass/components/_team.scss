@@ -51,6 +51,13 @@
       box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12);
     }
+
+    &__item:nth-child(2n) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0px;
+      }
+    }
+
     &__item:nth-child(4n) {
       margin-right: 0;
     }
@@ -83,11 +90,11 @@
       color: $primary-text-color;
     }
   }
-  .particapant__item:nth-child(2n) {
-    @media screen and (min-width: 768px) {
-      margin-right: 0px;
-    }
-  }
+  // .particapant__item:nth-child(2n) {
+  //   @media screen and (min-width: 768px) {
+  //     margin-right: 0px;
+  //   }
+  // }
   
   .social {
     display: flex;

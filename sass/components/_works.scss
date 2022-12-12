@@ -1,5 +1,8 @@
 /* works styles */
 .works {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }  
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 94px;
