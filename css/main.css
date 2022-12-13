@@ -62,12 +62,12 @@ ul {
   margin: -1px;
 }
 
-.clients, .team, .features {
+.footer, .clients, .team, .features {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 @media screen and (min-width: 1280px) {
-  .clients, .team, .features {
+  .footer, .clients, .team, .features {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -687,26 +687,67 @@ ul {
 
 /* footer styles */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: #2f303a;
 }
 .footer .footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media screen and (min-width: 480px) {
+  .footer .footer__content {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .footer__content {
+    max-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer__content {
+    max-width: 1200px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.company {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .company {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .company {
+    margin-left: 61px;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
-  letter-spacing: 0.03em;
   color: #2196f3;
 }
 .footer-logo__last {
@@ -715,7 +756,6 @@ ul {
 
 .adress-list {
   display: block;
-  margin-top: 20px;
 }
 .adress-list__line:not(:last-child) {
   margin-bottom: 9px;
@@ -746,7 +786,21 @@ ul {
 
 .social-join {
   display: block;
-  margin-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .social-join {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-join {
+    margin-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-join {
+    margin-left: 70px;
+  }
 }
 .social-join__title {
   color: #ffffff;
@@ -804,7 +858,8 @@ ul {
 /* subscribe */
 .subscribe {
   display: block;
-  margin-left: auto;
+  width: auto;
+  margin: 0 auto;
 }
 .subscribe__title {
   color: #ffffff;
@@ -815,13 +870,20 @@ ul {
   margin-bottom: 20px;
 }
 .subscribe__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  width: 460px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 30px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -829,10 +891,17 @@ ul {
   color: #757575;
   outline: 0;
 }
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .subscribe__input {
+    margin-bottom: 33px;
+  }
+}
 .subscribe__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
