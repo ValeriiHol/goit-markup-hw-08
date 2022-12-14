@@ -1289,7 +1289,7 @@ ul {
 }
 
 .modal {
-  width: 528px;
+  width: 450px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1302,6 +1302,11 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal__close {
   display: -webkit-box;
@@ -1414,9 +1419,9 @@ ul {
   margin: 10px auto 0;
 }
 .check-line .check-line__agree {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1426,16 +1431,28 @@ ul {
 }
 .check-line__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .check-line__text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .check-line__contract {
   margin-left: 5px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .check-line__contract {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .check-line__agree .icon-wrapper {
   display: -webkit-box;

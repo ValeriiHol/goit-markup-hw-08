@@ -20,7 +20,10 @@
 
   
 .modal {
-    width: 528px;
+    width: 450px;
+    @media screen and (min-width: 1200px) {
+      width: 528px;
+    }
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,21 +142,29 @@
   .check-line {
   margin: 10px auto 0;
     .check-line__agree {
-    display: flex;
+      display: inline-flex;
     align-items: center;
     justify-content: center;
    }
     &__text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
     color: $primary-text-color;
     }
     &__contract {
     margin-left: 5px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(24 / 14);
+    }
     color: $accent-color;
     }
     &__agree .icon-wrapper {
