@@ -20,7 +20,7 @@
 
   <body class="body">
     <!-- Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__content">
         <a class="logo-flex header__logo link" href="./">Web<span class="header__logo header__logo--last">Studio</span></a>
         <nav class="header__nav">
@@ -98,7 +98,7 @@
             </ul>
           </div>
           </div>
-    </header> -->
+    </header>
     <main>
       <!--Блок Hero-->
           <section class="hero">
@@ -108,7 +108,7 @@
 
           </section>
          <!--Блок Наші особливості --Features -->
-        <!-- <section class="features">
+        <section class="features">
           <div class="container">
             <h2 class="visually-hidden">Наші особливості</h2>
             <ul class="features-list list">
@@ -159,7 +159,7 @@
               </li>
             </ul>
           </div>
-        </section> -->
+        </section>
         <!--Блок Чим ми займаємося -- works -->
         <section class="works">
           <div class="container">
@@ -187,12 +187,19 @@
           </div>
         </section>
         <!--Блок Наша команда --team -->
-        <!-- <section class="team">
+        <section class="team">
           <div class="container">
             <h2 class="team__title">Наша команда</h2>
           <ul class="particapant list">
             <li class="particapant__item">
-              <img class="particapant__photo" src="./images/team_ph1.jpg" alt="Фото участника команды 01" width="270" />
+              <img class="particapant__photo" 
+              srcset="
+              ./images/team/img-450-1.jpg 450w,
+              ./images/team/img-900-1.jpg 900w,
+              ./images/team/img-1350-1.jpg 1350w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/team/img-450-1.jpg" alt="Фото участника команды 01" width="270" />
               <div class="particapant__sign"> 
                 <h3 class="particapant__name">Ігор Дем'яненко</h3>
                 <p class="particapant__post">Product Designer</p>
@@ -221,7 +228,14 @@
               </div>
               </li>
             <li class="particapant__item">
-              <img class="particapant__photo" src="./images/team_ph2.jpg" alt="Фото участника команды 02" width="270" />
+              <img class="particapant__photo" 
+              srcset="
+              ./images/team/img-450-2.jpg 450w,
+              ./images/team/img-900-2.jpg 900w,
+              ./images/team/img-1350-2.jpg 1350w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/team/img-450-2.jpg"2alt="Фото участника команды 02" width="270" />
               <div class="particapant__sign">
                 <h3 class="particapant__name">Ольга Рєпіна</h3>
                 <p class="particapant__post">Frontend Developer</p>  
@@ -250,7 +264,14 @@
               </div>
             </li>
             <li class="particapant__item">
-              <img class="particapant__photo" src="./images/team_ph3.jpg" alt="Фото участника команды 03" width="270" />
+              <img class="particapant__photo" 
+              srcset="
+              ./images/team/img-450-3.jpg 450w,
+              ./images/team/img-900-3.jpg 900w,
+              ./images/team/img-1350-3.jpg 1350w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/team/img-450-3.jpg" alt="Фото участника команды 03" width="270" />
               <div class="particapant__sign">
               <h3 class="particapant__name">Микола Тарасов</h3>
               <p class="particapant__post">Marketing</p>
@@ -279,7 +300,14 @@
             </div>
             </li>
             <li class="particapant__item">
-              <img class="particapant__photo" src="./images/team_ph4.jpg" alt="Фото участника команды 04" width="270" />
+              <img class="particapant__photo" 
+              srcset="
+              ./images/team/img-450-4.jpg 450w,
+              ./images/team/img-900-4.jpg 900w,
+              ./images/team/img-1350-4.jpg 1350w,
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/team/img-450-4.jpg" alt="Фото участника команды 04" width="270" />
               <div class="particapant__sign">
               <h3 class="particapant__name">Михайло Єрмаков</h3>
               <p class="particapant__post">UI Designer</p>
@@ -310,7 +338,7 @@
           </ul>
           </div>
           
-        </section> -->
+        </section>
 <!--  ---------Постійні клієнти----------  -->
            <section class="clients">
           <div class="container">
@@ -365,7 +393,7 @@
       </section>
     </main>
     <!--Блок подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__content container">
         <div class="company">
           <a class="footer-logo link" href="./">Web<span class="footer-logo__last">Studio</span></a>
@@ -429,8 +457,8 @@
           </form>
         </div>
       </div>
-  </footer> -->
-  
+  </footer>
+  <!-- MODAL -->
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__close" data-modal-close>
