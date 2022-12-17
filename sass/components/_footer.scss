@@ -178,6 +178,7 @@
       outline: 0;
       }
       &__button {
+      display: inline-flex;
       justify-content: center;
       align-items: center;
       width: 200px;
@@ -188,7 +189,10 @@
       line-height: calc(30 / 16);
       color: $button-filtr-font-active;
       border-radius: 4px;
-      margin-left: 12px;
+      @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        }    
+      
       border: none;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       cursor: pointer;

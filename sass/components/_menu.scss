@@ -115,7 +115,7 @@
       font-size: 24px;
       line-height: calc(28 / 24);
       text-decoration: none;
-      color: $title-text-color;
+      color: $primary-text-color;
     }
     &__active {
       font-weight: 500;
@@ -128,13 +128,28 @@
 
   .mobile-socials {
     display: flex;
-    gap: 20px;
+    padding: 0;
     &__link {
+      padding: 0 10px;
       font-weight: 500;
       font-size: 18px;
       line-height: calc(22 / 18);
       text-decoration: none;
       color: $accent-color;
-    }
+      // border-right: 1px solid rgba(33, 33, 33, 0.2);
+      }
+    // &__link:not(:last-child) {
+    //       border-right: 1px solid rgba(33, 33, 33, 0.2);
+    //     }  
+      // .mobile-socials__link:not(:last-child) {
+      //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+      // }
   }
+
+  // .mobile-socials__link:not(:last-child) {
+  //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  // }
+  // .mobile-socials .mobile-socials__link:not(:last-child) {
+  //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  // }
 

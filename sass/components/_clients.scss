@@ -27,16 +27,7 @@
     flex-wrap: wrap;
     // align-items: center;
     justify-content: center;
-    // gap: 30px;
-    @media screen and (min-width: 480px) {
-      max-width: 480px;
-      }
-      @media screen and (min-width: 768px) {
-        max-width: 768px;
-      }
-      @media screen and (min-width: 1200px) {
-        max-width: 1200px;
-      }
+    gap: 30px;
 
     &__item {
 
@@ -47,8 +38,6 @@
       @media screen and (min-width: 1200px) {
         width: calc((100% - 5 * 30px) / 6);
       }
-      margin-right: 30px;
-      margin-bottom: 30px;
       }
 
     &__link {
